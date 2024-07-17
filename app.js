@@ -54,12 +54,12 @@ function hideSplashScreen() {
     console.log('Tentando ocultar o splash screen');
     const splashScreen = document.getElementById('splash-screen');
     if (splashScreen) {
-        splashScreen.style.opacity = '0';
+        splashScreen.style.opacity = '1';
         splashScreen.style.visibility = 'hidden';
         setTimeout(() => {
             splashScreen.remove();
             console.log('Splash screen removido');
-        }, 50000);
+        }, 500); 
     } else {
         console.error('Elemento splash-screen não encontrado');
     }
@@ -68,7 +68,7 @@ function hideSplashScreen() {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOMContentLoaded disparado');
     
-    setTimeout(hideSplashScreen, 50000);
+    setTimeout(hideSplashScreen, 5000); // Ajuste o tempo para 5 segundos ou conforme necessário
 
     try {
         renderSchedule();
