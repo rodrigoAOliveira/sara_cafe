@@ -59,7 +59,7 @@ main {
     align-items: center;
     color: white;
     z-index: 9999;
-    transition: opacity 2.0s ease-out, visibility 8.0s ease-out;
+    transition: opacity 3.0s ease-out, visibility 10.0s ease-out;
 }
 
 .splash-logo {

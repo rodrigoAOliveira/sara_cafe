@@ -59,7 +59,7 @@ function hideSplashScreen() {
         setTimeout(() => {
             splashScreen.remove();
             console.log('Splash screen removido');
-        }, 100000);
+        }, 50000);
     } else {
         console.error('Elemento splash-screen não encontrado');
     }
@@ -68,7 +68,7 @@ function hideSplashScreen() {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOMContentLoaded disparado');
     
-    setTimeout(hideSplashScreen, 100000);
+    setTimeout(hideSplashScreen, 50000);
 
     try {
         renderSchedule();
